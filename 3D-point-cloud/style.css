@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.model-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.model-btn:hover {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.model-btn.active {
+    background: #3498db;
+    color: #fff;
+}
+
+.viewer-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.instructions {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(255,255,255,0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.highlight {
+    font-size: 1.3rem;
+    color: #3498db;
+    font-weight: bold;
+} 

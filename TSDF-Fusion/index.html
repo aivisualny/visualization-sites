@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSDF-Fusion: 공간을 똑똑하게 채우는 마법</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TSDF-Fusion: 공간을 똑똑하게 채우는 마법</h1>
+            <div class="subtitle">보이지 않는 거리를 측정해, 정육면체들이 모여 3D 형태를 만들어가요!</div>
+        </header>
+        <div class="viewer-container">
+            <div id="viewer"></div>
+            <div class="instructions">마우스로 드래그하여 회전<br>휠로 확대/축소</div>
+        </div>
+        <div class="info">
+            <div class="highlight">이렇게 공간을 채우면, 숨겨진 형태가 드러나요!</div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 

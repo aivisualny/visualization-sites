@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D 포인트 클라우드 데모</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>3D Point Cloud</h1>
+            <p class="subtitle">점으로 3D 세계 파악하기</p>
+        </header>
+
+        <div class="controls">
+            <button class="model-btn active" data-model="car">자동차</button>
+            <button class="model-btn" data-model="face">얼굴</button>
+            <button class="model-btn" data-model="star">별자리</button>
+        </div>
+
+        <div class="viewer-container">
+            <div id="viewer"></div>
+            <div class="instructions">
+                <p>마우스로 드래그하여 회전</p>
+                <p>휠로 확대/축소</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <p class="highlight">"점만으로도 물체를 알 수 있어!"</p>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
